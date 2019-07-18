@@ -1,0 +1,1 @@
+# mingol.github.io
