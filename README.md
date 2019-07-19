@@ -1,3 +1,1 @@
-# mingol.github.io
-
 # TESTING
