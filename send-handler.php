@@ -30,6 +30,7 @@ if(isset($_POST['send'])){
         //Recipients
         $mail->setFrom('Laicom@laicom.com.tw', 'Mailer');
         $mail->addAddress('mingo.lai@gmail.com', 'Mingo');     
+        $mail->addAddress('laicom@hotmail.com', 'David');
         
         //Content
         $mail->isHTML(true);
