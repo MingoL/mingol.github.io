@@ -14,8 +14,8 @@ if(isset($_POST['send'])){
         $mail->isSMTP();
         $mail->Host     = 'smtp.gmail.com';
         $mail->SMTPAuth = true; 
-        $mail->Username = '';
-        $mail->Password = '';
+        $mail->Username = $Username;
+        $mail->Password = $Password;
         $mail->Port     = 465;     
 
         //Content
@@ -24,13 +24,25 @@ if(isset($_POST['send'])){
         $subject = $_POST['subject'];
         $message = $_POST['message'];
         $email_subject = "New Submission from $name.";
-        $email_body = "<BR>User Name: $name.</BR>
-                        <BR>User Email: $visitor_email.</BR>
-                        User Message: $message.";
+        $email_body = 
+        "
+        <html>
+            <body>
+                <h1>Thank you for your message</h1>
+                <p>We will get back to you ASAP.</p>
+                <p> Username = $name.</p>
+                <p> Email = $visitor_email.</p>
+                <p> Your Message = $message.</p>
+            </body>
+        </html>              
+        ";
+
+        //$email_body = file_get_contents('email_template.html');
+
         //Recipients
         $mail->setFrom('Laicom@laicom.com.tw', 'Mailer');
         $mail->addAddress('mingo.lai@gmail.com', 'Mingo');     
-        $mail->addAddress('laicom@hotmail.com', 'David');
+        //$mail->addAddress('laicom@hotmail.com', 'David');
         
         //Content
         $mail->isHTML(true);
