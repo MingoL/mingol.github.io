@@ -17,8 +17,6 @@ if(isset($_POST['send'])){
         $mail->Username = $Username;
         $mail->Password = $Password;
         $mail->Port     = 465;     
-
-        //Content
         $name = $_POST['name'];
         $visitor_email = $_POST['email'];
         $subject = $_POST['subject'];
@@ -36,26 +34,19 @@ if(isset($_POST['send'])){
             </body>
         </html>              
         ";
-
         //$email_body = file_get_contents('email_template.html');
-
-        //Recipients
         $mail->setFrom('Laicom@laicom.com.tw', 'Mailer');
         $mail->addAddress('mingo.lai@gmail.com', 'Mingo');     
         $mail->addAddress('laicom@hotmail.com', 'David');
-        
-        //Content
         $mail->isHTML(true);
         $mail->Subject = $email_subject;
-        $mail->Body    = $email_body;
-        
+        $mail->Body    = $email_body;       
 
     $mail->send();
-    echo 
-    "
+    echo "
     <script>
-    alert('Thank you, your message has been sent');
-    document.location.href='contact.html';
+        alert('Thank you, your message has been sent');
+        document.location.href='contact.html';
     </script>
     ";
     //header("Location: contact.html");
