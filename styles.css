@@ -99,7 +99,7 @@ nav .fa{
 	width: 80%;
 	margin: auto;
 	text-align: center;
-	padding-top: 50px;	
+	padding-top: 100px;	
 }
 h1{
 	font-size: 36px;
@@ -256,13 +256,13 @@ h3{
 	color: #fff;
 }
 .sub-header h1{
-	margin-top: 50px;
+	margin-top: 30px;
 
 }
 .about-us{
 	width:80%;
 	margin:auto;
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-bottom: 50px;
 }
 .about-col{
@@ -340,7 +340,7 @@ h3{
 }
 .extrusion-col h1{
 	padding-top: 0;
-	color: #f44336;
+	color: #dc3545;
 }
 
 
