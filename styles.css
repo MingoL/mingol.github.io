@@ -103,9 +103,20 @@ nav .fa{
 	border: 1px solid #f44336;
   }
 
-  .backBtn:hover{
+.backBtn:hover{
 	color: #f44336;
 	transition: 1s;
+}
+
+.downloadBtn {
+	position: relative;
+	border: 1px solid #1013c9;
+	background: transparent;
+}
+.downloadBtn:hover{
+	color: #f44336;
+	transition: 1s;
+	border: 1px solid #f44336;
 }
 
 /*-----------prodcut-------*/
@@ -140,7 +151,6 @@ p{
 	padding: 20px 12px;
 	box-sizing: border-box;
 	transition: 0.5s;
-	
 }
 h3{
 	text-align: center;
@@ -149,6 +159,12 @@ h3{
 }
 .product-col:hover{
 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+a.fill-div {
+    display: block;
+    text-decoration: none;
+	cursor: pointer;
 }
 
 /*-----------products----------*/
