@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -37,7 +36,6 @@
     <P></P>
     <div class="row">
         <div class="extrusion-col">
-
             <div class="slideshow"><img src="images/Products/Packaging/512/cafein_front512.jpg"><div class="slideshowtag"><h2>COFFEE BAGS</h2></div></div>
             <div class="slideshow"><img src="images/Products/Packaging/512/chips512.jpg"><div class="slideshowtag"><h2>CHIPS BAGS</h2></div></div>
             <div class="slideshow"><img src="images/Products/Packaging/512/facemask512.jpg"><div class="slideshowtag"><h2>FACE MASK</h2></div></div>
@@ -67,7 +65,6 @@
                 If you require any further information, don't hesitate to contact us directly. 
                 We look forward to assisting you with your packaging needs!Flexible Packaging</p>
         </div>
-
     </div> 
 </section>
 
@@ -89,44 +86,9 @@
     <p>Made by Laicom</p>
 </section>
 
-<script src="scripts/main.js"></script>
-
-
 <!--------SCRIPT--------->
-<script>
-var slideIndex = 0;
-// showDivs(slideIndex);
-carousel();
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slideshow");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slideshow");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-
-
-</script>
+<script src="scripts/main.js"></script>
+<script src="scripts/slidershow.js"></script>
 
 </body>
 </html>
