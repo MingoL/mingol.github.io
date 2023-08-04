@@ -358,7 +358,31 @@ h3{
 	padding-top: 0;
 	color: #dc3545;
 }
+/* ---------------certification--------- */
+.iso img{
+	margin: auto;
+	max-width: 50%;
+	max-height: 50%;
+	position: center;
+	display: block;
+	
+}
 
+/* ---------------packaging--------- */
+.slideshow img{
+	display: block;
+}
+.slideshowtag {
+	text-align:justify;
+	/* margin-left: 15%;
+	margin-right: auto; */
+	display: block;
+}
+.slideshow_bt{
+	justify-content: center;
+	/* margin-left: 20%;
+	margin-right: auto; */
+}
 
 
 @media(max-width: 700px){

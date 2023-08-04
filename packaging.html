@@ -27,7 +27,7 @@
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-    <h1>PACKAGING</h1>
+    <h1>FLEXIBLE PACKAGING</h1>
 </section>
 <button class='backBtn' onclick="history.back(-1)">GO BACK! </button>
 
@@ -37,26 +37,45 @@
     <P></P>
     <div class="row">
         <div class="extrusion-col">
-            <img src="images/Products/Machinery/KS_extruder_512.png">
+
+            <div class="slideshow"><img src="images/Products/Packaging/512/cafein_front512.jpg"><div class="slideshowtag"><h2>COFFEE BAGS</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/chips512.jpg"><div class="slideshowtag"><h2>CHIPS BAGS</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/facemask512.jpg"><div class="slideshowtag"><h2>FACE MASK</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/fruit_front512.jpg"><div class="slideshowtag"><h2>CANDY</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/hydromask512.jpg"><div class="slideshowtag"><h2>FACE MASK</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/hydromask_back512.png"><div class="slideshowtag"><h2>FACE MASK</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/nestle512.png"><div class="slideshowtag"><h2>NESTLE COFFEE</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/nivea_front512.png"><div class="slideshowtag"><h2>NIVEA CREAM</h2></div></div>
+            <div class="slideshow"><img src="images/Products/Packaging/512/microwave512.png"><div class="slideshowtag"><h2>MIRCOWAVE BAG</h2></div></div>
+
+            <button class="slideshow_bt" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="slideshow_bt" onclick="plusDivs(+1)">&#10095;</button>
         </div>
         <div class="extrusion-col">
             <h1>Flexible Packaging</h1>
             <p>
-                Flexible Packaging</p>
-        </div>
+                Our diverse range of flexible packaging solutions! 
+                We take pride in offering a wide variety of options, including bags, pouches, 
+                microwave bags, coffee bags, single material bags, and more. 
+                Our expertise extends to providing solutions for both the consumer goods 
+                and food industries.
 
+                You can rely on us for all your laminated bag needs, including aluminum pouches. 
+                Rest assured, our products adhere to international standards, and our food containers 
+                and packaging are certified by TAF (Testing Accreditation Food).
+
+                If you require any further information, don't hesitate to contact us directly. 
+                We look forward to assisting you with your packaging needs!Flexible Packaging</p>
+        </div>
 
     </div> 
 </section>
 
-
-
-
-
-    
-
-
-
+<section class="certification">
+    <div class="iso">
+        <img src="images/ISO CERTIFICATIONS/certifications.png">
+    </div>
+</section>
 
 <!--------footer--------->
 <section class="footer">
@@ -71,6 +90,45 @@
 </section>
 
 <script src="scripts/main.js"></script>
+
+
+/*script*/
+<script>
+var slideIndex = 0;
+// showDivs(slideIndex);
+carousel();
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+
+</script>
 
 </body>
 </html>
