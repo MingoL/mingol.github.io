@@ -4,7 +4,7 @@
 	font-family: 'Poppins', sans-serif;
 }
 .header{
-	min-height: 100vh;
+	min-height: 30vh;
 	width: 100%;
 	background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ZxRo7E.jpg);
 	background-position: center;
@@ -301,6 +301,7 @@ a.fill-div {
 	padding: 30px 2px;
 }
 .about-col img{
+	padding-top: 20%;
 	width: 100%;
 }
 .about-col h1{
@@ -369,6 +370,7 @@ a.fill-div {
 .extrusion-col img{
 	width: 80%;
 	padding-right: 0px;
+	padding-top: 20%;
 }
 .extrusion-col h1{
 	padding-top: 0;
@@ -385,19 +387,34 @@ a.fill-div {
 }
 
 /* ---------------packaging--------- */
+
+.packaging-col{
+	justify-content: center;
+
+
+}
+
 .slideshow img{
 	display: block;
+	max-width: 300px;
+	max-height: 300px;
+	justify-content: center;
+	padding-top: 30%;
 }
 .slideshowtag {
-	text-align:justify;
-	/* margin-left: 15%;
-	margin-right: auto; */
+	text-align: center;
 	display: block;
 }
 .slideshow_bt{
+	position: relative;
+	border: 1px solid #1013c9;
+	background: transparent;
+	width: 20%;
+
+}
+.buttonselection{
 	justify-content: center;
-	/* margin-left: 20%;
-	margin-right: auto; */
+	display: flex;
 }
 
 
